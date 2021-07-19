@@ -1,3 +1,7 @@
-Bash
-Internet
 Unix
+Bash
+Git
+HTML
+CSS
+JavaScript
+GitHub
