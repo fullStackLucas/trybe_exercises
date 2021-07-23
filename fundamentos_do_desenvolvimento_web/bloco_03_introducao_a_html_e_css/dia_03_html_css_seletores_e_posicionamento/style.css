@@ -17,6 +17,7 @@ div:hover {
 
 .complementar {
     background-color: purple;
+    padding: 2px;
 }
 
 .escura {
@@ -45,4 +46,8 @@ div:hover {
 
 .clara > h3 {
     color: black;
+}
+
+.impar {
+    font-style: italic;
 }
