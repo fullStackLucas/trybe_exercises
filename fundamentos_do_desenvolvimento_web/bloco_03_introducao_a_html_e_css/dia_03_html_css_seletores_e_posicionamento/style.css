@@ -1,3 +1,8 @@
+h3 {
+    font-family: Otomanopee One;
+    text-align: center;
+}
+
 div:hover {
     border: 2px solid black;
 }
@@ -20,4 +25,24 @@ div:hover {
 
 .clara {
     background-color: cyan;
+}
+
+.primaria > h3 {
+    color: white;
+}
+
+.secundaria > h3 {
+    color: red
+}
+
+.complementar > h3 {
+    color: yellow;
+}
+
+.escura {
+    color: cyan;
+}
+
+.clara > h3 {
+    color: black;
 }
