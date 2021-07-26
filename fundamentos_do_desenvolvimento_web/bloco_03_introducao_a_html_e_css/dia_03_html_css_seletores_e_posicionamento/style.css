@@ -31,10 +31,34 @@
     background-color: pink;
 }
 
-li > em {
+.stack:hover {
+    color: orange;
     font-weight: 700;
 }
 
+.w3schools:hover {
+    color: green;
+    font-weight: 700;
+}
+
+.mdn:hover {
+    color: black;
+    font-weight: 700;
+}
+
+.devdocs:hover {
+    color: yellow;
+    font-weight: 700;
+}
+
+.trybe:hover {
+    color: green;
+    font-weight: 700;
+}
+
+li > em {
+    font-weight: 700;
+}
 
 
 
