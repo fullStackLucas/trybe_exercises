@@ -1,53 +1,20 @@
-h3 {
-    font-family: Otomanopee One;
-    text-align: center;
-}
-
-div:hover {
-    border: 2px solid black;
-}
-
-.primaria {
-    background-color: blue;
-}
-
-.secundaria {
-    background-color: orange;
-}
-
-.complementar {
-    background-color: purple;
-    padding: 2px;
-}
-
-.escura {
-    background-color: rgba(39, 36, 35, 0.753);
-}
-
-.clara {
-    background-color: cyan;
-}
-
-.primaria > h3 {
-    color: white;
-}
-
-.secundaria > h3 {
-    color: red
-}
-
-.complementar > h3 {
-    color: yellow;
-}
-
-.escura {
-    color: cyan;
-}
-
-.clara > h3 {
-    color: black;
+.cinco-frases {
+    background-color: yellow;
 }
 
 .impar {
-    font-style: italic;
+    text-transform: uppercase;
+}
+
+.par {
+    color: green;
+}
+
+.titulo {
+    color: red;
+}
+
+.italico {
+    text-size-adjust: 40px;
+    border: 1px solid black;
 }
