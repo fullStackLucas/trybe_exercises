@@ -18,3 +18,11 @@
     text-size-adjust: 40px;
     border: 1px solid black;
 }
+
+.tamanho-lista {
+    font-size: 20px;
+}
+
+li > em {
+    font-weight: 700;
+}
