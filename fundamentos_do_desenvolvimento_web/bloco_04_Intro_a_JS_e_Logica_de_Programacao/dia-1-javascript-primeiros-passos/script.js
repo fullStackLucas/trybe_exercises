@@ -1,11 +1,17 @@
-let anguloA = 60;
-let anguloB = 0;
-let anguloC = 60;
+let chess = "Batata"
 
-if (anguloA <= 0 || anguloB <= 0 || anguloC <= 0) {
-    console.log ("ângulo inválido");
-} else if (anguloA + anguloB + anguloC !== 180) {
-    console.log ("false");
-} else if (anguloA + anguloB + anguloC === 180) {
-    console.log ("true");
+if (chess.toLowerCase() === "pawn") {
+    console.log ("one step forward");
+} else if (chess.toLowerCase() === "knight") {
+    console.log ("two steps in a straight line, then one step to the side of your choice");
+} else if (chess.toLowerCase() === "bishop") {
+    console.log ("diagonal movements as much as you can");
+} else if (chess.toLowerCase() === "tower") {
+    console.log ("can go forward in a straight line as much as you can");
+} else if (chess.toLowerCase() === "queen") {
+    console.log ("she can move like bishop and tower at the same time");
+} else if (chess.toLowerCase() === "king") {
+    console.log ("can move one step only, for every single spot on the table");
+} else {
+    console.log ("This isn't a chess piece, genius!")
 };
