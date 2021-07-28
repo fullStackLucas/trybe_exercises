@@ -2,13 +2,10 @@ let a = 4;
 let b = 8;
 let c = 5;
 
-if (a > b && a > c) {
-    console.log (a);
-} else if (b > a && b > c) {
-    console.log (b);
-} else if (c >= b && c >= a) {
-    console.log (c);
+if (a > 0) {
+    console.log ("positive");
+} else if (a < 0) {
+    console.log ("negative");
 } else {
-    console.log ("Nothing")
+    console.log ("zero");
 };
-
