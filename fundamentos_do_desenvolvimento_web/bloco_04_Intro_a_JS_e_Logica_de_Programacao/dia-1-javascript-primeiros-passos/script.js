@@ -1,11 +1,14 @@
 let a = 4;
 let b = 8;
+let c = 5;
 
-if (a > b) {
+if (a > b && a > c) {
     console.log (a);
-} else if (b > a) {
+} else if (b > a && b > c) {
     console.log (b);
+} else if (c >= b && c >= a) {
+    console.log (c);
 } else {
-    console.log ("Neca de pitibiriba");
+    console.log ("Nothing")
 };
 
