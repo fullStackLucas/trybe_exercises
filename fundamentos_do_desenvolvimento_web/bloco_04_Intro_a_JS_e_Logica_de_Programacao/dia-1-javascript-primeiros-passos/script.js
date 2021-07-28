@@ -1,19 +1,9 @@
-let score = 10
+let a = 1;
+let b = 2;
+let c = 3;
 
-if (score >= 90) {
-    console.log ("A"); 
-} else if (score >= 80) {
-    console.log ("B");
-} else if (score >= 70) {
-    console.log ("C");
-} else if (score >= 60) {
-    console.log ("D");
-} else if (score >= 50) {
-    console.log ("E")
-} else if (score < 50) {
-    console.log ("F")
-} else if (score > 100 || score < 0) {
-    console.log ("Error, it's an invalid score")
+if (a % 2 === 0 || b % 2 === 0 || c % 2 === 0) {
+    console.log ("true")
+} else {
+    console.log ("false")
 }
-
-
