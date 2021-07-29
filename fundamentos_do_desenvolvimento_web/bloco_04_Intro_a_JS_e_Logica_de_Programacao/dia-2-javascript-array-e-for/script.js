@@ -1,5 +1,5 @@
-/*let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-let sum = 0
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+/*let sum = 0
 for (let index = 0; index < numbers.length; index += 1) {
   sum += numbers[index];
 };
@@ -31,7 +31,7 @@ for (let index = 0; index < numbers.length; index += 1) {
     if (numbers[index] < lowerNumber) {
         lowerNumber = numbers[index]
     };
-}; console.log (lowerNumber); */
+}; console.log (lowerNumber); 
 
 let numbers = [];
 for (let i = 1; i <= 25; i += 1){
@@ -40,6 +40,18 @@ for (let i = 1; i <= 25; i += 1){
 for (let j = 0; j < numbers.length; j += 1) {
     numbers[j] = numbers[j] / 2;
 };
-console.log (numbers);
+console.log (numbers);*/
+
+for (let i = 1; i < numbers.length; i += 1) {
+    for (let j = 0; j < i; j += 1) {
+        if (numbers[i] < numbers[j]) {
+            let change = numbers[i]; //crio a variável para receber o valor de numbers[i]
+            numbers[i] = numbers[j]; //atribuo o valor de numbers[i](posição posterior) a numbers[j] (posição anterior)
+            numbers[j] = change; // recebo o valor da posição numbers[i] pois ela havia sido guardada anteriormente pela variavel criada.
+        }
+    }
+
+} console.log (numbers);
+
 
 
