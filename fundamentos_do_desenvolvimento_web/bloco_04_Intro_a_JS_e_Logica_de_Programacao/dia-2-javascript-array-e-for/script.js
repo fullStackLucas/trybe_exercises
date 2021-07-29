@@ -13,15 +13,22 @@ for (let index = 0; index < numbers.length; index += 1) {
     if (numbers[index] > higherNumber) {
         higherNumber = numbers[index]
     };
-}; console.log (higherNumber)*/
+}; console.log (higherNumber)
 let oddNumbers = 0
 for (let index = 0; index < numbers.length; index += 1) {
     if (numbers[index] % 2 !== 0) {
         oddNumbers += 1
     }; 
-}
+};
 if (oddNumbers > 0) {
     console.log (oddNumbers)
 } else {
     console.log ("nenhum valor ímpar encontrado")
-}
+};*/
+
+let lowerNumber = numbers[0]
+for (let index = 0; index < numbers.length; index += 1) {
+    if (numbers[index] < lowerNumber) {
+        lowerNumber = numbers[index]
+    };
+}; console.log (lowerNumber); 
