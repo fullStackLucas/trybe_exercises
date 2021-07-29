@@ -44,7 +44,7 @@ console.log (numbers);*/
 
 for (let i = 1; i < numbers.length; i += 1) {
     for (let j = 0; j < i; j += 1) {
-        if (numbers[i] < numbers[j]) {
+        if (numbers[i] > numbers[j]) {
             let change = numbers[i]; //crio a variável para receber o valor de numbers[i]
             numbers[i] = numbers[j]; //atribuo o valor de numbers[i](posição posterior) a numbers[j] (posição anterior)
             numbers[j] = change; // recebo o valor da posição numbers[i] pois ela havia sido guardada anteriormente pela variavel criada.
