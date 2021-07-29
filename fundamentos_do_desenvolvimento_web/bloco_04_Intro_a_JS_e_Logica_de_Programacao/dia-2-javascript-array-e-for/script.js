@@ -34,6 +34,12 @@ for (let index = 0; index < numbers.length; index += 1) {
 }; console.log (lowerNumber); */
 
 let numbers = [];
-for (i = 1; i <= 25; i += 1){
+for (let i = 1; i <= 25; i += 1){
     numbers.push(i)
-} console.log (numbers)
+} 
+for (let j = 0; j < numbers.length; j += 1) {
+    numbers[j] = numbers[j] / 2;
+};
+console.log (numbers);
+
+
