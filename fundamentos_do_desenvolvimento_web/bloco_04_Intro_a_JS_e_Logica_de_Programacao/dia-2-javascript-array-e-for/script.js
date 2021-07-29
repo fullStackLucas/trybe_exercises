@@ -40,7 +40,7 @@ for (let i = 1; i <= 25; i += 1){
 for (let j = 0; j < numbers.length; j += 1) {
     numbers[j] = numbers[j] / 2;
 };
-console.log (numbers);*/
+console.log (numbers);
 
 for (let i = 1; i < numbers.length; i += 1) {
     for (let j = 0; j < i; j += 1) {
@@ -51,7 +51,16 @@ for (let i = 1; i < numbers.length; i += 1) {
         }
     }
 
-} console.log (numbers);
+} console.log (numbers);*/
+
+let numbersMult = [];
+for (let i = 0; i < numbers.length; i += 1) {
+    if (i < numbers.length - 1) {
+        numbersMult.push(numbers[i] * numbers[i + 1])
+    } else {
+        numbersMult.push(numbers[i] * 2);
+    };
+} console.log (numbersMult);
 
 
 
