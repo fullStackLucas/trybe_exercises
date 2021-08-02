@@ -13,10 +13,15 @@ let info = {
 
   info.recorrente = "Sim";
 
-  // 3
+  /* 3
 
   for (key in info) {
       console.log(key);
-  };
+  }; */
 
-  
+  // 4 
+
+  for (key in info) {
+    console.log(info[key]);
+};
+
