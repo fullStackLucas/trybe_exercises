@@ -23,3 +23,4 @@ let bisneto = document.createElement("p");
 primeiroFilhoDoFilho.appendChild(bisneto);
 bisneto.innerText = "Olá, sou o bisneto";
 
+let acessThirdChild = bisneto.parentNode.nextElementSibling;
