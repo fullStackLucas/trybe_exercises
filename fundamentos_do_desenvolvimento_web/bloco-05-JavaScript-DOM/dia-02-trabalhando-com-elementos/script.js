@@ -7,3 +7,6 @@ let firstChild = pai.firstChild;
 firstChild = ondeVoceEsta.previousElementSibling;
 let atencao = ondeVoceEsta.parentNode;
 atencao.innerHTML = "Mudando Elemento Atenção";
+let thirdChild = ondeVoceEsta.nextElementSibling;
+thirdChild = pai.lastChild.previousElementSibling;
+
