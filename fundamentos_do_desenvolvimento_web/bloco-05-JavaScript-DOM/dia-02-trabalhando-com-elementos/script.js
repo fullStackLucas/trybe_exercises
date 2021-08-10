@@ -4,4 +4,6 @@ pai.style.color = "green";
 let primeiroFilhoDoFilho = document.querySelector("#primeiroFilhoDoFilho");
 primeiroFilhoDoFilho.innerHTML = "Adicione um texto aqui";
 let firstChild = pai.firstChild;
-firstChild = ondeVoceEsta.nextElementSibling;
+firstChild = ondeVoceEsta.previousElementSibling;
+let atencao = ondeVoceEsta.parentNode;
+atencao.innerHTML = "Mudando Elemento Atenção";
