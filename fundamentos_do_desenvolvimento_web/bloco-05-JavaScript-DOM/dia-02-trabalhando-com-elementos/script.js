@@ -14,6 +14,12 @@ let irmaoOnde = document.createElement("section");
 pai = document.querySelector("#pai");
 pai.appendChild(irmaoOnde);
 irmaoOnde.innerText = "Hello World!"
+
 let filhoOndeVoceEsta = document.createElement("article");
 ondeVoceEsta.appendChild(filhoOndeVoceEsta);
-filhoOndeVoceEsta.innerText = "I'm back with guns!"
+filhoOndeVoceEsta.innerText = "I'm back with guns!";
+
+let bisneto = document.createElement("p");
+primeiroFilhoDoFilho.appendChild(bisneto);
+bisneto.innerText = "Olá, sou o bisneto";
+
