@@ -24,3 +24,15 @@ primeiroFilhoDoFilho.appendChild(bisneto);
 bisneto.innerText = "Olá, sou o bisneto";
 
 let acessThirdChild = bisneto.parentNode.nextElementSibling;
+
+let remove = pai.children;
+console.log(remove.length);
+for (let index = 2; index < remove.length; index += 1){
+    let element = remove[index];
+    if (element.length !== 0 ){
+        element.remove();
+        index -=1;
+    } else {
+        break;
+    }
+};
