@@ -13,12 +13,20 @@ main = document.querySelector(".main-content");
 let sectionCenter = document.createElement("section");
 main.appendChild(sectionCenter);
 sectionCenter.classList.add("center-content");
+sectionCenter = document.querySelector(".center-content");
 
 //4 Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
+let p1 = document.createElement("p");
+sectionCenter.appendChild(p1);
+p1.innerText = "Estou atrasado nos exercícios"
 
 //5 Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
+let sectionLeft = document.createElement("section");
+main.appendChild(sectionLeft);
+sectionLeft.classList.add("left-content");
 
 //6 Adicione a tag section com a classe right-content como filho da tag main criada no passo 2;
+
 
 //7 Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image . Esse elemento deve ser filho do section criado no passo 5;
 
