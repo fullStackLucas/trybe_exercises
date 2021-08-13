@@ -38,5 +38,18 @@ sectionLeft.appendChild(smallImage);
 smallImage.src = "https://picsum.photos/200";
 
 //8 Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um , dois , três , ... como valores da lista. Essa lista deve ser filha do section criado no passo 6;
+let numeros = ["um", "dois", "três", "quatro", "cinco", "seis", "sete", "oito", "nove", "dez"];
+let lista = document.createElement("ul");
+sectionRight.appendChild(lista);
+lista.classList.add("lista6");
+lista = document.querySelector(".lista6");
+
+for (let i = 0; i < numeros.length; i += 1){
+  let item = numeros[i]; //coloco cada número por extenso dentro da variável;
+  let listItem = document.createElement("li"); // crio uma li de cada vez, sempre que o for rodar.
+  listItem.innerText = item; //atribuo o nome do número por extenso correspondente ao índice do for dentro da LI;
+  lista.appendChild(listItem); // faço o vínculo da LI à UL (lista não ordenada);
+};
 
 //9 Adicione 3 tags h3 , todas sendo filhas do main criado no passo 2.
+
