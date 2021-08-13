@@ -75,7 +75,7 @@ main.removeChild(sectionLeft);
 sectionRight.style.marginRight = "auto";
 
 // 14 Troque a cor de fundo do elemento pai da section criada no passo 3 (aquela que possui a classe center-content) para a cor verde;
-
+sectionCenter.style.backgroundColor = "green";
 
 // 15 Remova os dois últimos elementos ( nove e dez ) da lista criada no passo 8.
 
