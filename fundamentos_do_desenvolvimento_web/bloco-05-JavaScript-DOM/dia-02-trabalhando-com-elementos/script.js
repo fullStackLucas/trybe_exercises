@@ -48,6 +48,7 @@ for (let i = 0; i < numeros.length; i += 1){
   let item = numeros[i]; //coloco cada número por extenso dentro da variável;
   let listItem = document.createElement("li"); // crio uma li de cada vez, sempre que o for rodar.
   listItem.innerText = item; //atribuo o nome do número por extenso correspondente ao índice do for dentro da LI;
+  listItem.classList.add("list-items")
   lista.appendChild(listItem); // faço o vínculo da LI à UL (lista não ordenada);
 };
 
@@ -75,7 +76,14 @@ main.removeChild(sectionLeft);
 sectionRight.style.marginRight = "auto";
 
 // 14 Troque a cor de fundo do elemento pai da section criada no passo 3 (aquela que possui a classe center-content) para a cor verde;
-sectionCenter.style.backgroundColor = "green";
+sectionCenter.parentElement.style.backgroundColor = "green";
 
 // 15 Remova os dois últimos elementos ( nove e dez ) da lista criada no passo 8.
+let listItems = document.querySelectorAll(".list-items")
 
+for (let index = 0; index < listItems.length; index += 1){
+  let element = listItems[index];
+  if (index === listItems.length -1 || index === listItems.length -2){
+    lista.removeChild(element);
+  };
+};
