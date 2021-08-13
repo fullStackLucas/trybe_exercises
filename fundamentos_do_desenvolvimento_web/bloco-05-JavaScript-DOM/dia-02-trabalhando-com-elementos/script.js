@@ -52,4 +52,12 @@ for (let i = 0; i < numeros.length; i += 1){
 };
 
 //9 Adicione 3 tags h3 , todas sendo filhas do main criado no passo 2.
+let primeiroH3 = document.createElement("h3");
+let segundoH3 = document.createElement("h3");
+let terceiroH3 = document.createElement("h3");
+main.appendChild(primeiroH3);
+main.appendChild(segundoH3);
+main.appendChild(terceiroH3);
+
+// Agora que você criou muita coisa, vamos fazer algumas alterações e remoções:
 
