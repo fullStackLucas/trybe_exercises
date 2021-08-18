@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de Currículo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="div-container">
+      <header>
+        <h1>Formulário de Currículo</h1>
+      </header>
+    </div>
+    <section class="dados-pessoais">
+      <form action="" method="GET">
+        <fieldset>
+          <legend>Nome</legend>
+          <input type="text" id="nome" maxlength="40" placeholder="Nome" required/> 
+        </fieldset>
+        <fieldset>
+          <legend>Email</legend>
+          <input type="text" name="email" id="person-email" maxlength="50" placeholder="Email" required>
+        </fieldset>
+        <fieldset>
+          <legend>CPF</legend>
+          <input type="text" name="cpf" id="person-cpf" maxlength="11" placeholder="Somente números" required>
+        </fieldset>
+        <fieldset>
+          <legend>Endereço</legend>
+          <input type="text" name="adress" id="person-adress" placeholder="Rua, Avenida, número" maxlength="200" required>
+        </fieldset>
+        <fieldset>
+          <legend>Cidade</legend>
+          <input type="text" name="city" id="person-city" placeholder="Cidade natal" maxlength="28" required>
+        </fieldset>
+        <fieldset>
+          <legend>Estado</legend>
+          <select name="state" id="state" required></select>
+        </fieldset>
+        <fieldset>
+          <legend>Moradia</legend>
+          <input type="radio" name="moradia" id="casa">
+        </fieldset>
+      </form>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
