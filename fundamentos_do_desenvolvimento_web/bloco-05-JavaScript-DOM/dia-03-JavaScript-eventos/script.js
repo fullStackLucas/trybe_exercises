@@ -60,4 +60,29 @@ function holidayButton (string){
 
 holidayButton("Feriados");
 
-// exercicio 3;
+// exercicio 3; 
+//Implemente uma função que adicione ao botão "Feriados" um evento de "click" que muda a cor de fundo dos dias que possuem a classe "holiday" .
+// É interessante que este botão possua também a lógica inversa. Ao ser clicado novamente ele retorna à configuração inicial com a cor "rgb(238,238,238)" .
+
+function clickOnButton (){
+  let classHoliday = document.querySelectorAll(".holiday");
+    for (let i= 0; i < classHoliday.length; i += 1){
+      let eachClassHoliday = classHoliday[i];
+      let elementStyle = getComputedStyle(eachClassHoliday)
+        if (eachClassHoliday.style.backgroundColor === "") {
+          eachClassHoliday.style.backgroundColor = "red";
+        } else {
+          eachClassHoliday.style.backgroundColor = "";
+        };
+    };
+    
+};
+let btnHoliday = document.getElementById("btn-holiday");
+btnHoliday.addEventListener("click", clickOnButton);
+
+// 4 Implemente uma função que receba como parâmetro a string "Sexta-feira" e crie dinamicamente um botão com o nome "Sexta-feira".
+// Adicione a este botão o ID "btn-friday" .
+// Adicione este botão como filho/filha da tag <div> com classe "buttons-container" .
+
+
+

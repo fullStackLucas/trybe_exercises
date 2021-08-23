@@ -13,3 +13,5 @@ function createState(){
 }
 
 createState();
+
+document.getElementById('data-inicio').DatePickerX.init();

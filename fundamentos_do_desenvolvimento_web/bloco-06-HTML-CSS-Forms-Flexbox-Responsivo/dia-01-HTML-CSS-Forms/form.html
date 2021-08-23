@@ -5,55 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulário de Currículo</title>
-    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="dist/css/DatePickerX.min.css">
+    <script src="dist/js/DatePickerX.min.js"></script>
   </head>
   <body>
-    <div class="div-container">
+    <div class="container-fluid">
       <header>
         <h1>Formulário de Currículo</h1>
       </header>
     </div>
-    <section class="dados-pessoais">
+    <section class="container-fluid">
       <form action="" method="GET">
-        <fieldset>
-          <legend>Nome</legend>
-          <input type="text" id="nome" maxlength="40" placeholder="Nome" required/> 
-        </fieldset>
-        <fieldset>
-          <legend>Email</legend>
-          <input type="text" name="email" id="person-email" maxlength="50" placeholder="Email" required>
-        </fieldset>
-        <fieldset>
-          <legend>CPF</legend>
-          <input type="text" name="cpf" id="person-cpf" maxlength="11" placeholder="Somente números" required>
-        </fieldset>
-        <fieldset>
-          <legend>Endereço</legend>
-          <input type="text" name="adress" id="person-adress" placeholder="Rua, Avenida, número" maxlength="200" required>
-        </fieldset>
-        <fieldset>
-          <legend>Cidade</legend>
-          <input type="text" name="city" id="person-city" placeholder="Cidade natal" maxlength="28" required>
-        </fieldset>
-        <fieldset>
-          <legend>Estado</legend>
-          <select name="state" id="state" required></select>
-        </fieldset>
-        <fieldset>
-          <legend>Moradia</legend>
-          <input type="radio" name="moradia" id="casa" required>
-          <label for="casa">Casa</label>
-          <input type="radio" name="moradia" id="apt" required>
-          <label for="apt">Apartamento</label>
-          <input type="radio" name="moradia" id="chiqueiro" required>
-          <label for="chiqueiro">Chiqueiro</label>
-          <input type="radio" name="moradia" id="galinheiro" required>
-          <label for="galinheiro">Galinheiro</label>
-        </fieldset>
-        <fieldset>
-          <legend>Resumo do Currículo</legend>
-          <label for="resumo-curriculo"><textarea name="resumo-curriculo" id="resumo-curriculo" cols="30" rows="10"></textarea></label>
-        </fieldset>
+        <section class="container-fluid">
+          <div>
+            <legend>Nome</legend>
+            <input type="text" id="nome" name="nome" maxlength="40" placeholder="Nome" required/> 
+          </div>
+          <div>
+            <legend>Email</legend>
+            <input type="text" name="email" id="person-email" maxlength="50" placeholder="Email" required>
+          </div>
+          <div>
+            <legend>CPF</legend>
+            <input type="text" name="cpf" id="person-cpf" maxlength="11" placeholder="Somente números" required>
+          </div>
+          <div>
+            <legend>Endereço</legend>
+            <input type="text" name="adress" id="person-adress" placeholder="Rua, Avenida, número" maxlength="200" required>
+          </div>
+          <div>
+            <legend>Cidade</legend>
+            <input type="text" name="city" id="person-city" placeholder="Cidade natal" maxlength="28" required>
+          </div>
+          <div>
+            <legend>Estado</legend>
+            <select name="state" id="state" required></select>
+          </div>
+          <div>
+            <legend>Moradia</legend>
+            <input type="radio" name="moradia" id="casa" required>
+            <label for="casa">Casa</label>
+            <input type="radio" name="moradia" id="apt" required>
+            <label for="apt">Apartamento</label>
+            <input type="radio" name="moradia" id="chiqueiro" required>
+            <label for="chiqueiro">Chiqueiro</label>
+            <input type="radio" name="moradia" id="galinheiro" required>
+            <label for="galinheiro">Galinheiro</label>
+          </div>
+        </section>
+        <section class="container-fluid">
+          <div>
+            <legend>Resumo do Currículo</legend>
+            <label for="resumo-curriculo"><textarea name="resumo-curriculo" id="resumo-curriculo" cols="30" rows="10" maxlength="1000" required></textarea></label>
+          </div>
+          <div>
+            <div>
+              <div>
+                <label for="cargo">Cargo</label>
+              </div>
+              <input type="text" name="cargo" id="cargo" maxlength="40" required>
+            </div>
+            <div>
+              <div>
+                <label for="descricao-cargo">Descrição do Cargo</label>
+              </div>
+              <textarea name="descricao-cargo" id="descricao-cargo" cols="30" rows="10" maxlength="500" required></textarea>
+            </div>
+            <div>
+              <div>
+                <label for="data-inicio">Data de Início</label>                
+              </div>
+              <input type="text" name="data-inicio" id="data-inicio">
+            </div>
+          </div>
+        </section>
+        <button type="submit">Enviar</button>
       </form>
     </section>
     <script src="script.js"></script>
