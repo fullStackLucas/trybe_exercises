@@ -1,0 +1,65 @@
+.cinco-frases {
+    background-color: yellow;
+}
+
+.impar {
+    text-transform: uppercase;
+}
+
+.par {
+    color: green;
+}
+
+.titulo {
+    color: red;
+}
+
+.italico {
+    text-size-adjust: 40px;
+    border: 1px solid black;
+}
+
+.tamanho-lista {
+    font-size: 20px;
+}
+
+.fonte-azul {
+    color: blue
+}
+
+.java {
+    background-color: pink;
+}
+
+.stack:hover {
+    color: orange;
+    font-weight: 700;
+}
+
+.w3schools:hover {
+    color: green;
+    font-weight: 700;
+}
+
+.mdn:hover {
+    color: black;
+    font-weight: 700;
+}
+
+.devdocs:hover {
+    color: yellow;
+    font-weight: 700;
+}
+
+.trybe:hover {
+    color: green;
+    font-weight: 700;
+}
+
+li > em {
+    font-weight: 700;
+}
+
+
+
+

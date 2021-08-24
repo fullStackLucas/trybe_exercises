@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  background-color: rgb(240, 240, 240);
+}
+
+.div-container {
+  margin: 10px auto;
+  text-align: center;
+  background-color: rgb(211, 226, 220);
+  width: 80%;
+}
+
+
+
