@@ -51,3 +51,9 @@ showValues(lesson2);
 
 // parte 5
 
+const allLessons = {
+  lesson1,
+  lesson2,
+  lesson3
+};
+
