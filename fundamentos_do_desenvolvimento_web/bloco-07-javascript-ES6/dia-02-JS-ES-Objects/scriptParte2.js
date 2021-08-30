@@ -34,3 +34,12 @@ const showKeys = (object) => {
 
 showKeys(lesson2)
 
+// parte 3
+
+const objectLength = (object) => {
+  return Object.entries(object).length
+}
+
+console.log (`O objeto tem ${objectLength(lesson2)} elementos`);
+
+// parte 4
