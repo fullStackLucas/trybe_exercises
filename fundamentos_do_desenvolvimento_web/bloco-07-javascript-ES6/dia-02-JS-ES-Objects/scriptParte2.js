@@ -28,3 +28,9 @@ console.log(lesson2)
 
 // parte 2
 
+const showKeys = (object) => {
+  return Object.keys(object)
+}
+
+showKeys(lesson2)
+
