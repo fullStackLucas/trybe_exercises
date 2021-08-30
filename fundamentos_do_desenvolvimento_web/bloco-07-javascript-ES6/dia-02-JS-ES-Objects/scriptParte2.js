@@ -24,7 +24,6 @@ const addMorningTurn = (object, key, value) => {
 
 addMorningTurn(lesson2, 'turno', 'manhã');
 
-console.log(lesson2)
 
 // parte 2
 
@@ -43,3 +42,12 @@ const objectLength = (object) => {
 console.log (`O objeto tem ${objectLength(lesson2)} elementos`);
 
 // parte 4
+
+const showValues = (object) => {
+  return Object.values(object)
+};
+
+showValues(lesson2);
+
+// parte 5
+
