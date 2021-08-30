@@ -57,3 +57,17 @@ const allLessons = {
   lesson3
 };
 
+// parte 6
+
+const maxStudents = (object, key) => {
+  const parametro = Object.values(object)
+
+  let sum = 0
+  for (let index = 0; index < parametro.length; index += 1) {
+    sum += parametro[index][key]
+  }
+  return (sum)
+}
+
+maxStudents(allLessons, 'numeroEstudantes')
+
