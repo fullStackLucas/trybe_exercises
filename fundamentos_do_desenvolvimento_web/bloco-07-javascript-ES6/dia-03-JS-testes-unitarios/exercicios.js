@@ -25,4 +25,4 @@ const resultZero = () => {
   assert.strictEqual(actual, 0, 'expecting 0 as result!')
 };
 
-
+sum(4, '5');

@@ -1,5 +1,5 @@
 * {
-  margin: 0;
+  margin: 10px;
   padding: 0;
 }
 
@@ -21,14 +21,27 @@ figure {
   margin: 0;
 }
 
-@media screen and (max-width: 600px){
-  * {
-    margin: 10px;
-  }
-  
-  .figure-content {
+main {
   display: flex;
   flex-direction: column;
   margin: 40px 0px;
-  }
+  align-items: center;
 }
+
+@media screen and (min-width: 581px) {
+  body {
+    background-color: blanchedalmond;
+    font-size: 16px;
+  }
+
+  body {
+    font-size: x-large;
+  }
+
+  h1 {
+    font-size: large;
+  }
+
+}
+
+
