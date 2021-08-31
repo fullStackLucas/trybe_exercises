@@ -37,5 +37,5 @@ assert.throws(() => {
 assert.throws(() => {
   sum(4, '5');
 }, 
-  'Error: parameters must be numbers'
+  /^Error: parameters must be numbers$/
 );
