@@ -1,5 +1,6 @@
 const assert = require('assert');
 
+
 function sum(a, b) {
   if (typeof a !== 'number' || typeof b !== 'number') {
     throw new Error('parameters must be numbers');
@@ -25,4 +26,9 @@ const resultZero = () => {
   assert.strictEqual(actual, 0, 'expecting 0 as result!')
 };
 
-sum(4, '5');
+// verifica se existe um erro quando é lançada a string '5' como parâmetro
+
+assert.throws(() => {
+  sum(4, '5');  
+});
+
