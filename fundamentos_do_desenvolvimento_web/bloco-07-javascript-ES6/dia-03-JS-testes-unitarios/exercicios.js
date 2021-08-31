@@ -32,3 +32,10 @@ assert.throws(() => {
   sum(4, '5');  
 });
 
+// verifica se ao adicionarmos uma string como parametro, será mostrada a mensagem de erro: parameters must be numbers 
+
+assert.throws(() => {
+  sum(4, '5');
+}, 
+  'Error: parameters must be numbers'
+);
