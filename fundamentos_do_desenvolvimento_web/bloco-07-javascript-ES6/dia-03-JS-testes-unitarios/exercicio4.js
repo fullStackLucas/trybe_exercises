@@ -26,4 +26,6 @@ assert.strictEqual(myFizzBuzz(20), 'buzz');
 
 assert.notStrictEqual(myFizzBuzz(29), 'fizzbuzz');
 
-//
+// Faça uma chamada com um parâmetro que não é um número e verifique se o retorno é o esperado
+
+assert.strictEqual(myFizzBuzz('ola'), false);
