@@ -20,3 +20,8 @@ const obj3 = {
 // verifica se o obj1 é igual ao obj2
 
 assert.deepStrictEqual(obj1, obj2);
+
+// verifica se o obj1 é diferente do obj3
+
+assert.notDeepStrictEqual(obj1, obj3);
+
